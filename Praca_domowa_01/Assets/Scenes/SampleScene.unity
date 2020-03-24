@@ -546,7 +546,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 290829640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508fe7dca080cac41b6becb17edc04ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 1826a25684e6bc74d80113de7b4146ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &340648432
@@ -717,11 +717,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 431958393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ef3fc3987baf014ea163e62e70c470e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a51c26247e89a84db8c57f5d6567daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
-  jump: 500
+  speed: 200
+  jump: 550.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 732072645}
   - component: {fileID: 732072644}
   - component: {fileID: 732072646}
+  - component: {fileID: 732072649}
   - component: {fileID: 732072648}
   m_Layer: 0
   m_Name: platforma4
@@ -1051,9 +1052,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732072643}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d5e1da649492e478d15bb33d4dee53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationCenter: {fileID: 0}
+  rotationRadius: 2
+  angularSpeed: 1.5
+--- !u!114 &732072649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732072643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 220c8b933a078f04995f0d8bc885c5f9, type: 3}
+  m_Script: {fileID: 11500000, guid: c5c54fe21470c6348874b4098fc6d534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1415187530
@@ -1173,11 +1189,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1415187530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 540479d4e45b43d4cb4e5ce91439fbd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 53d5e1da649492e478d15bb33d4dee53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portal1: {fileID: 0}
-  ludek: {fileID: 0}
+  rotationCenter: {fileID: 340648433}
+  rotationRadius: 2
+  angularSpeed: 1.5
 --- !u!114 &1415187536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,11 +1202,10 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415187530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3544c253017a87049bfdfd402c96c3b1, type: 3}
+  m_Script: {fileID: 11500000, guid: c58f6e05645758d4c9a556476649fff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationCenter: {fileID: 340648433}
-  rotationRadius: 1.3
-  angularSpeed: 1.5
+  portal1: {fileID: 0}
+  ludek: {fileID: 0}
